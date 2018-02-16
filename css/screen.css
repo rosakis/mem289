@@ -1,0 +1,248 @@
+/*-----------------------------------------------------------------------------*
+ * Style file for screen media
+ * Michael Plexousakis <plex@tem.uoc.gr>
+ *----------------------------------------------------------------------------*/
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,
+abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,
+strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,
+label,legend,table,caption,tbody,tfoot,thead,tr,th,td {
+	margin: 0; padding: 0; border: 0; outline: 0;
+	font-size: 100%; font-family: inherit; font-weight: inherit; font-style: inherit;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+body {line-height: 1.5; background; #fff;}
+
+table {border-collapse: collapse; border-spacing: 0;}
+caption, th, td {text-align: left; font-weight: normal; float: none !important;}
+table, th, td {vertical-align: middle;}
+
+blockquote, q {quotes: "" "";}
+blockquote:before, blockquote:after, q:before, q:after {content: '';}
+
+:focus {outline: 0;}
+ins {text-decoration: none;}
+del {text-decoration: line-through;}
+a img {border: none;}
+
+/*-Typography-----------------------------------------------------------------*/
+
+html {font-size: 100.01%;}
+
+body {
+	font-size: 75%;
+	font-family: "Lucida Grande", "Helvetica Neue", Arial, Helvetica, sans-serif;
+       	color: #222;
+       	background: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {font-weight: normal; color: #111;}
+
+h1 {font-size: 3em; line-height: 1; margin: 0.5em 0;}
+h2 {font-size: 2em; margin-bottom: 0.75em;}
+h3 {font-size: 1.5em; line-height: 1; margin-bottom: 1em;}
+h4 {font-size: 1.2em; line-height: 1.25; margin-bottom: 1.25em;}
+h5 {font-size: 1em; font-weight: bold; margin-bottom: 1.5em;}
+h6 {font-size: 1em; font-weight: bold;}
+h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {margin: 0;}
+
+p {margin: 0 0 1.5em;}
+p img.left {float: left; margin: 1.5em 1.5em 1.5em 0; padding: 0;}
+p img.right {float: right; margin: 1.5em 0 1.5em 1.5em; padding: 0;}
+
+a:link { text-decoration: underline; color: #36c; }
+a:visited { text-decoration: underline; color: #36c; }
+a:hover { text-decoration: underline; color: #c33; }
+a:active, a:focus { text-decoration: underline; color: #000; }
+
+blockquote {margin: 1.5em; color: #666; font-style: italic;}
+
+strong {font-weight: bold;}
+em, dfn {font-style: italic;}
+sup, sub {font-size: 85%; line-height: 0;}
+abbr, acronym {border-bottom: 1px dotted #666;}
+address {margin: 0 0 1.5em; font-style: italic;}
+del {text-decoration: line-through; color: #666;}
+pre {margin: 1.5em 0; white-space: pre;}
+pre, code, tt, kbd, var, samp {font: 1em 'andale mono', 'lucida console', monospace; line-height: 1.5;}
+
+li ul, li ol {margin: 0;}
+ul, ol {margin: 0 1.5em 1.5em 0; padding-left: 1.5em;}
+ul {list-style-type: disc;}
+ul ul {list-style-type: square;}
+ul ul ul {list-style-type: circle;}
+ol {list-style-type: decimal;}
+
+dl {margin: 0 0 1.5em 0;}
+dl dt {font-weight: bold;}
+dd {margin-left: 1.5em;}
+
+table {margin-bottom: 1.4em; width: 100%;}
+th {font-weight: bold;}
+thead th {background: #c3d9ff;}
+th, td, caption {padding: 4px 10px 4px 5px;}
+tr.even td {background: #e5ecf9;}
+tfoot {font-style: italic;}
+caption {background: #eee;}
+
+.smaller {font-size: 0.8em; margin-bottom: 1.875em; line-height: 1.875em;}
+.larger {font-size: 1.2em; line-height: 2.5em; margin-bottom: 1.25em;}
+.quiet {color: #666;}
+.loud {color: #000;}
+.highlight {background: #ff0;}
+.hide {display: none;}
+
+.fancy {
+       	font-family: "Warnock Pro", "Goudy Old Style", "Palatino", "Book Antiqua", Georgia, serif;
+       	font-style: italic;
+       	font-weight: normal;
+	color: #666;
+}
+
+/*-Forms----------------------------------------------------------------------*/
+
+label {font-weight: bold;}
+fieldset {padding: 1.4em; margin: 0 0 1.5em 0; border:1px solid #ccc;}
+legend {font-weight: bold; font-size: 1.2em;}
+input[type=text], input[type=password], input.text, input.title, textarea, select {background-color: #fff; border: 1px solid #bbb;}
+input[type=text]:focus, input[type=password]:focus, input.text:focus, input.title:focus, textarea:focus, select:focus {border-color: #666;}
+input[type=text], input[type=password], input.text, input.title, textarea, select {margin: 0.5em 0;}
+input.text, input.title {width: 300px; padding: 5px;}
+input.title {font-size: 1.5em;}
+textarea {width: 390px; height: 250px; padding: 5px;}
+input[type=checkbox], input[type=radio], input.checkbox, input.radio {position: relative; top: 0.25em;}
+
+/*-The grid-------------------------------------------------------------------*/
+
+.container {width: 950px; margin: 0 auto;}
+.showgrid {background: url(../img/grid.png);}
+
+.span01, .span02, .span03, .span04, .span05, .span06, .span07, .span08, .span09, .span10, .span11, .span12,
+.span13, .span14, .span15, .span16, .span17, .span18, .span19, .span20, .span21, .span22, .span23, .span24 {
+	float: left;
+       	margin-right: 10px;
+}
+
+.last {margin-right: 0;}
+
+.span01 {width:  30px;}
+.span02 {width:  70px;}
+.span03 {width: 110px;}
+.span04 {width: 150px;}
+.span05 {width: 190px;}
+.span06 {width: 230px;}
+.span07 {width: 270px;}
+.span08 {width: 310px;}
+.span09 {width: 350px;}
+.span10 {width: 390px;}
+.span11 {width: 430px;}
+.span12 {width: 470px;}
+.span13 {width: 510px;}
+.span14 {width: 550px;}
+.span15 {width: 590px;}
+.span16 {width: 630px;}
+.span17 {width: 670px;}
+.span18 {width: 710px;}
+.span19 {width: 750px;}
+.span20 {width: 790px;}
+.span21 {width: 830px;}
+.span22 {width: 870px;}
+.span23 {width: 910px;}
+.span24 {width: 950px; margin-right: 0;}
+
+input.span01, textarea.span01, input.span02, textarea.span02, input.span03, textarea.span03, input.span04, textarea.span04,
+input.span05, textarea.span05, input.span06, textarea.span06, input.span07, textarea.span07, input.span08, textarea.span08,
+input.span09, textarea.span09, input.span10, textarea.span10, input.span11, textarea.span11, input.span12, textarea.span12,
+input.span13, textarea.span13, input.span14, textarea.span14, input.span15, textarea.span15, input.span16, textarea.span16,
+input.span17, textarea.span17, input.span18, textarea.span18, input.span19, textarea.span19, input.span20, textarea.span20,
+input.span21, textarea.span21, input.span22, textarea.span22, input.span23, textarea.span23, input.span24, textarea.span24 {
+	border-left-width: 1px;
+	border-right-width: 1px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+input.span01, textarea.span01 {width:  18px;}
+input.span02, textarea.span02 {width:  58px;}
+input.span03, textarea.span03 {width:  98px;}
+input.span04, textarea.span04 {width: 138px;}
+input.span05, textarea.span05 {width: 178px;}
+input.span06, textarea.span06 {width: 218px;}
+input.span07, textarea.span07 {width: 258px;}
+input.span08, textarea.span08 {width: 298px;}
+input.span09, textarea.span09 {width: 338px;}
+input.span10, textarea.span10 {width: 378px;}
+input.span11, textarea.span11 {width: 418px;}
+input.span12, textarea.span12 {width: 458px;}
+input.span13, textarea.span13 {width: 498px;}
+input.span14, textarea.span14 {width: 538px;}
+input.span15, textarea.span15 {width: 578px;}
+input.span16, textarea.span16 {width: 618px;}
+input.span17, textarea.span17 {width: 658px;}
+input.span18, textarea.span18 {width: 698px;}
+input.span19, textarea.span19 {width: 738px;}
+input.span20, textarea.span20 {width: 778px;}
+input.span21, textarea.span21 {width: 818px;}
+input.span22, textarea.span22 {width: 858px;}
+input.span23, textarea.span23 {width: 898px;}
+input.span24, textarea.span24 {width: 938px;}
+
+.prepend01 {padding-left:  40px;}
+.prepend02 {padding-left:  80px;}
+.prepend03 {padding-left: 120px;}
+.prepend04 {padding-left: 160px;}
+.prepend05 {padding-left: 200px;}
+.prepend06 {padding-left: 240px;}
+.prepend07 {padding-left: 280px;}
+.prepend08 {padding-left: 320px;}
+.prepend09 {padding-left: 360px;}
+.prepend10 {padding-left: 400px;}
+.prepend11 {padding-left: 440px;}
+.prepend12 {padding-left: 480px;}
+.prepend13 {padding-left: 520px;}
+.prepend14 {padding-left: 560px;}
+.prepend15 {padding-left: 600px;}
+.prepend16 {padding-left: 640px;}
+.prepend17 {padding-left: 680px;}
+.prepend18 {padding-left: 720px;}
+.prepend19 {padding-left: 760px;}
+.prepend20 {padding-left: 800px;}
+.prepend21 {padding-left: 840px;}
+.prepend22 {padding-left: 880px;}
+.prepend23 {padding-left: 920px;}
+
+.append01 {padding-right:  40px;}
+.append02 {padding-right:  80px;}
+.append03 {padding-right: 120px;}
+.append04 {padding-right: 160px;}
+.append05 {padding-right: 200px;}
+.append06 {padding-right: 240px;}
+.append07 {padding-right: 280px;}
+.append08 {padding-right: 320px;}
+.append09 {padding-right: 360px;}
+.append10 {padding-right: 400px;}
+.append11 {padding-right: 440px;}
+.append12 {padding-right: 480px;}
+.append13 {padding-right: 520px;}
+.append14 {padding-right: 560px;}
+.append15 {padding-right: 600px;}
+.append16 {padding-right: 640px;}
+.append17 {padding-right: 680px;}
+.append18 {padding-right: 720px;}
+.append19 {padding-right: 760px;}
+.append20 {padding-right: 800px;}
+.append21 {padding-right: 840px;}
+.append22 {padding-right: 880px;}
+.append23 {padding-right: 920px;}
+
+.border {padding-right: 4px; margin-right: 5px; border-right: 1px solid #ddd;}
+.colborder {padding-right: 24px; margin-right: 25px; border-right: 1px solid #ddd;}
+
+hr {background: #ddd; color: #ddd; clear: both; float: none; width: 100%; height: 1px; margin: 0 0 1.45em; border: none;}
+hr.space {background: #fff; color: #fff; visibility: hidden;}
+
+.clearfix:after, .container:after {content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; overflow: hidden;}
+.clearfix, .container {display: block;}
+.clear {clear: both;}

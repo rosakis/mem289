@@ -1,0 +1,32 @@
+/*-----------------------------------------------------------------------------*
+ * Fixes for IE/win
+ * Michael Plexousakis <plex@tem.uoc.gr>
+ *----------------------------------------------------------------------------*/
+
+body {text-align: center;}
+.container {text-align: left;}
+
+* html .span01, * html .span02, * html .span03, * html .span04, * html .span05,
+* html .span06, * html .span07, * html .span08, * html .span09, * html .span10,
+* html .span11, * html .span12, * html .span13, * html .span14, * html .span15,
+* html .span16, * html .span17, * html .span18, * html .span19, * html .span20,
+* html .span21, * html .span22, * html .span23, * html .span24 {display: inline; overflow: hidden;}
+
+* html legend {margin: 0px -8px 16px 0; padding: 0;}
+sup {vertical-align: text-top;}
+sub {vertical-align: text-bottom;}
+html>body p code {*white-space: normal;}
+
+hr {margin: -8px auto 11px;}
+img {-ms-interpolation-mode: bicubic;}
+
+.clearfix, .container {display: inline-block;}
+* html .clearfix, * html .container {height: 1%;}
+
+fieldset {padding-top: 0;}
+textarea {overflow: auto;}
+input.text, input.title, textarea {background-color: #fff; border: 1px solid #bbb;}
+input.text:focus, input.title:focus {border-color: #666;}
+input.text, input.title, textarea, select {margin: 0.5em 0;}
+input.checkbox, input.radio {position: relative; top: 0.25em;}
+button, input.button {position: relative; top: 0.25em;}
